@@ -4,6 +4,8 @@
 files:
   - "!**/*"
   - ".commitlintrc"
+  - ".gitattributes"
+  - ".gitignore"
   - "GitVersion.yml"
   - "LICENSE"
   - ".github/CODEOWNERS"

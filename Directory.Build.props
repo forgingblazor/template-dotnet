@@ -5,6 +5,7 @@
 
     <Authors>NetEvolve, samtrion, ForgingBlazor</Authors>
     <Company>ForgingBlazor</Company>
+    <Description></Description>
 
     <PackageTags>$(PackageTags);forgingblazor;</PackageTags>
 
@@ -15,6 +16,7 @@
     <CopyrightYearStart>2024</CopyrightYearStart>
 
     <ProjectTargetFrameworks>net9.0</ProjectTargetFrameworks>
+    <LangVersion>preview</LangVersion>
     <!-- Workaround, until https://github.com/GitTools/GitVersion/pull/4206 is released -->
     <GitVersionTargetFramework>net9.0</GitVersionTargetFramework>
   </PropertyGroup>

@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      dotnet-logging:
+        required: true
+        type: choice
+        default: minimal
+        options:
+          - quiet
+          - minimal
+          - normal
+          - detailed
+          - diagnostic
+
+jobs:
+  all:
+    if: github.run_id != 1
+    name: Build & Tests
+    uses: forgingblazor/pipelines/.github/workflows/execute-dotnet.yml@0.1.2
+    secrets: inherit
+    with:
+      dotnet-logging: ${{ inputs.dotnet-logging }}
+      dotnet-solution: ${{ vars.DOTNET_SOLUTION }}
+      dotnet-version: ${{ vars.DOTNET_VERSIONS }}
+      enable-sonar-qube: true

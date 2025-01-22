@@ -1,0 +1,22 @@
+name: Update derived repositories
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  template-sync:
+    name: Execute
+    if: github.actor != 'dependabot[bot]' && github.repository == 'forgingblazor/template-dotnet'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - uses: ahmadnassri/action-template-repository-sync@v2.6.6
+        with:
+          github-token: ${{ secrets.TEMPLATE_SYNC }}
+          dry-run: false
+          skip-ci: true

@@ -8,8 +8,10 @@ files:
   - "LICENSE"
   - ".github/CODEOWNERS"
   - ".github/FUNDING.yml"
+  - ".github/labels-dotnet.yml"
   - ".github/ISSUE_TEMPLATE/**/*"
   - ".github/PULL_REQUEST_TEMPLATE/**/*"
+  - ".github/workflows/update-labels.yml"
 
   # you probably want to exclude these files:
   - "!.github/workflows/update-derived-repositories.yml"

@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - .github/labels.yml
+      - .github/labels-dotnet.yml
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          manifest: .github/labels.yml
+          manifest: .github/labels-dotnet.yml

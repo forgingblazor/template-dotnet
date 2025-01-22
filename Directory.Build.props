@@ -1,0 +1,22 @@
+<Project>
+
+  <PropertyGroup Label="Package settings">
+    <Title>$(MSBuildProjectName)</Title>
+
+    <Authors>NetEvolve, samtrion, ForgingBlazor</Authors>
+    <Company>ForgingBlazor</Company>
+
+    <PackageTags>$(PackageTags);forgingblazor;</PackageTags>
+
+    <RepositoryUrl></RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReleaseNotes>$(RepositoryUrl)/releases</PackageReleaseNotes>
+
+    <CopyrightYearStart>2024</CopyrightYearStart>
+
+    <ProjectTargetFrameworks>net9.0</ProjectTargetFrameworks>
+    <!-- Workaround, until https://github.com/GitTools/GitVersion/pull/4206 is released -->
+    <GitVersionTargetFramework>net9.0</GitVersionTargetFramework>
+  </PropertyGroup>
+
+</Project>

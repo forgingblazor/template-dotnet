@@ -18,7 +18,18 @@ updates:
       - "dependency:actions"
     # Add assignees
     assignees:
-      - "samtrion"
+      - "forgingblazor/builders"
+
+  - package-ecosystem: "dotnet-sdk"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(sdk)"
+    labels:
+      - "dependency:dotnet"
+    assignees:
+      - "forgingblazor/builders"
 
   - package-ecosystem: "nuget"
     directory: "/"
@@ -27,10 +38,10 @@ updates:
     commit-message:
       prefix: "chore(deps)"
     labels:
-      - "dependency:nuget"
+      - "dependency:dotnet"
     # Add assignees
     assignees:
-      - "samtrion"
+      - "forgingblazor/builders"
     groups:
      coverlet:
        patterns:

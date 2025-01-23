@@ -9,6 +9,7 @@ files:
   - "GitVersion.yml"
   - "LICENSE"
   - ".github/CODEOWNERS"
+  - ".github/dependabot.yml"
   - ".github/FUNDING.yml"
   - ".github/labels-dotnet.yml"
   - ".github/ISSUE_TEMPLATE/**/*"

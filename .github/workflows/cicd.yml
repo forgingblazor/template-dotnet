@@ -25,7 +25,7 @@ jobs:
     uses: forgingblazor/pipelines/.github/workflows/execute-dotnet.yml@0.1.2
     secrets: inherit
     with:
-      dotnet-logging: ${{ inputs.dotnet-logging }}
+      dotnet-logging: ${{ inputs.dotnet-logging || 'minimal' }}
       dotnet-solution: ${{ vars.DOTNET_SOLUTION }}
       dotnet-version: ${{ vars.DOTNET_VERSIONS }}
       enable-sonar-qube: true

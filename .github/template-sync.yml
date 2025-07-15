@@ -9,12 +9,18 @@ files:
   - "GitVersion.yml"
   - "testEnvironments.json"
   - ".github/CODEOWNERS"
+  - ".github/copilot-instructions.md"
   - ".github/dependabot.yml"
   - ".github/FUNDING.yml"
   - ".github/labels-dotnet.yml"
+  - ".github/instructions/**/*.md"
   - ".github/ISSUE_TEMPLATE/**/*"
   - ".github/PULL_REQUEST_TEMPLATE/**/*"
   - ".github/workflows/update-labels.yml"
+
+  # Decisions and templates
+  - "decisions/**/*.*"
+  - "templates/**/*.*"
 
   # you probably want to exclude these files:
   - "!.github/workflows/update-derived-repositories.yml"

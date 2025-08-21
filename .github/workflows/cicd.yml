@@ -22,7 +22,7 @@ jobs:
   all:
     if: github.run_id != 1
     name: Build & Tests
-    uses: forgingblazor/pipelines/.github/workflows/execute-dotnet.yml@0.1.36
+    uses: forgingblazor/pipelines/.github/workflows/execute-dotnet.yml@0.1.39
     secrets: inherit
     with:
       dotnet-logging: ${{ inputs.dotnet-logging || 'minimal' }}
